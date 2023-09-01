@@ -1,0 +1,62 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,500;0,600;1,600&display=swap");
+
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidebar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+body {
+  background-color: var(--color-base);
+  color: var(--color-body);
+  font-family: var(--font-base), sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0, 4s ease;
+}
+a:hover {
+  color: var(--color-brand);
+}
+img {
+  width: 100%;
+}
+/* navbar */
+.navbar .nav-link {
+  font-weight: 700;
+  color: #f7f0f0;
+  text-transform: uppercase;
+}
+
+.navbar > .nav-link a:hover {
+  color: var(--color-brand);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 63, 71, 0.75)),
+      url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
+  }
+}
